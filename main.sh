@@ -1,0 +1,12 @@
+python main.py \
+--weights ./models/bert_cucumber.pt \
+--source ./data/testdata \
+--output ./outputs \
+--conf-thres 0.2 \
+--iou-thres 0.5 \
+--device 0 \
+--agnostic-nms \
+--cfg ./yolor/cfg/yolor_p6.cfg \
+--names ./data/farmbot_cucmber.names \
+--vertical_focal_len 898.292 \
+--horizontal_focal_len 1300.507

@@ -1,0 +1,38 @@
+DEVICE: ""
+OUTPUT : "inference/output"
+YOLOCFG: "./yolor/cfg/yolor_p6.cfg"
+# CFG : "cfg/yolov4.cfg"
+AUGMENT : false
+CLASSES : false 
+AGNOSTIC_NMS : false
+UPDATE : false
+save_txt : true
+CONF_THRES : 0.2
+IOU_THRES : 0.5
+low_rate : 0.2
+high_rate : 0.5
+numW : 1280
+numH : 720
+eps : "10 ** -6"
+stemLine_color : (208,205,195)
+stemROILine_color : (0,255,204)
+plantLine_color : (84, 230, 129)
+TOMATO:
+  IMGSZ : 320
+  WEIGHTS : "./models/best_tomato.pt"
+  NAMES : "data/farmbot_tomato.names"
+  MODEL_TYPE : "aug"
+CUCUMBER:
+  IMGSZ : 448
+  WEIGHTS : "./models/best_cucumber.pt"
+  NAMES : "data/farmbot_cucumber.names"
+  MODEL_TYPE : "rgb"
+
+# MODEL_TYPE = "subtr"
+# MODEL_TYPE = "blur21"
+# MODEL_TYPE = "blur100"
+# MODEL_TYPE = "blur9"
+# MODEL_TYPE = "rgb"
+# MODEL_TYPE = "greyAbs"
+
+    
