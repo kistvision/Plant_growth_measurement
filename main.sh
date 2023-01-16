@@ -1,12 +1,12 @@
 python main.py \
---weights ./models/bert_cucumber.pt \
+--weights ./models/best_overall.pt \
 --source ./data/testdata \
 --output ./outputs \
 --conf-thres 0.2 \
 --iou-thres 0.5 \
 --device 0 \
 --agnostic-nms \
---cfg ./yolor/cfg/yolor_p6.cfg \
---names ./data/farmbot_cucmber.names \
+--cfg ./yolor/cfg/yolo_p6_custom.cfg\
+--names ./data/farmbot.names \
 --vertical_focal_len 898.292 \
---horizontal_focal_len 1300.507
+--horizontal_focal_len 897.507
