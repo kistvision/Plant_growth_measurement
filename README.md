@@ -85,10 +85,10 @@ python main.py \
 
 # Result
 ### Input sample image
-![input](test/rgb/RGB_20220222_001_1.png)
+![input](test/rgb/RGB_20220222_016_3.png)
 
-### Result of `vision.py`
-![output](sample_img/RGB_20220222_001_1.png)
+### Result of `main.py`
+![output](sample_img/RGB_20220222_016_3.png)
 
 ### Result showed in terminal
 ![terminal](sample_img/terminal_result2.png)
