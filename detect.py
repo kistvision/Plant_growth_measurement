@@ -27,9 +27,8 @@ def load_classes(path):
         names = f.read().split('\n')
     return list(filter(None, names))  # filter removes empty strings (such as last line)
 
-# TODO : file 저장하는 부분 빼던가 하기
 def detect(SOURCE, TARGET, BASE_NAME, model, device, opt):
-    # SOURCE는 preprocessing 해서 배경 지운거, TARGET은 원래 rgb이미지(plot_one_box 해서 box 표시할거)
+    # SOURCE: background removal preprocessed input image, TARGET: original RGB image which will be showed with bounding box 
     half = device.type!= 'cpu'  # half precision only supported on CUDA
     pred_coord = []
     img0 = SOURCE
