@@ -22,7 +22,7 @@ if __name__ == '__main__':
     parser.add_argument('--agnostic-nms', action='store_true', help='class-agnostic NMS')
     parser.add_argument('--augment', action='store_true', help='augmented inference')
     parser.add_argument('--update', action='store_true', help='update all models')
-    parser.add_argument('--cfg', type=str, default='./yolor/cfg/yolor_p6.cfg', help='*.cfg path')
+    parser.add_argument('--cfg', type=str, default='./yolor/cfg/yolor_p6_custom.cfg', help='*.cfg path')
     parser.add_argument('--names', type=str, default='./data/farmbot_cucumber.names', help='*.cfg path')
     parser.add_argument('--vertical_focal_len', type=float, default= 898.292, help='focal length of camera. default is L515')
     parser.add_argument('--horizontal_focal_len', type=float, default= 897.507, help='focal length of camera. default is L515')
@@ -45,7 +45,7 @@ if __name__ == '__main__':
         pred = detect(composed, rgb_img, filename, model, device, opt) 
 
         print(f'file : {filename}')
-        if len(pred) < 2: # branch가 2개 미만이면, branch간의 거리를 구할 수 없음
+        if len(pred) < 2: # if number of predicted branche is one (less than two), we cannot calculate the distance between two branches
             continue
         success_cnt += 1
         get_plant_growth_info(rgb_img, depth_img, pred, filename, opt)
