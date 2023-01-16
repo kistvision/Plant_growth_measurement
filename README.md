@@ -63,7 +63,6 @@ Or, you can revise `main.sh` file in order to use above-mentioned parsers more c
 sh main.sh
 ```
 
-
 # Brief guideline for using `main.sh`,
 
 `CFG`: Our model used `yolo_p6_custom.cfg` as configuration file.
