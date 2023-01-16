@@ -88,7 +88,4 @@ python main.py \
 ![input](test/rgb/RGB_20220222_016_3.png)
 
 ### Result of `main.py`
-![output](sample_img/RGB_20220222_016_3.png)
-
-### Result showed in terminal
-![terminal](sample_img/terminal_result2.png)
+![output](image/RGB_20220222_016_3.png)
