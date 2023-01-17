@@ -64,7 +64,7 @@ sh main.sh
 ```
 
 # Brief guideline for using `main.sh`,
-`weights`: You can download our weights through this [Google drive link](https://drive.google.com/file/d/1KoADVsTtHr0dEKd2PonX9kcsCrl_zT1S/view?usp=share_link). 
+`weights`: You can download our weights through this [Google drive link](https://drive.google.com/file/d/14mTBM5oQsalyUQRwluSlE3VLPD4KiMPU/view?usp=share_link). 
 
 `cfg`: Our model used `yolo_p6_custom.cfg` as configuration file.
 
