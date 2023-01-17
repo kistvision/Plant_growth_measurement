@@ -55,7 +55,7 @@ pip install tqdm==4.62.0
 4) If needed, revise `main.py` file in order to use your own image samples or lively captured images according to the comments written in `main.py`.
 
 ```bash
-python main.py --source sample/test --output sample/output --img-size 320 
+python main.py --source sample/test --output sample/output --img-size 320 --cfg cfg/yolor_p6_custom.cfg
 ```
 Or, you can revise `main.sh` file in order to use above-mentioned parsers more conveniently.
 
