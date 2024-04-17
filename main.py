@@ -22,7 +22,7 @@ if __name__ == '__main__':
     parser.add_argument('--agnostic-nms', action='store_true', help='class-agnostic NMS')
     parser.add_argument('--augment', action='store_true', help='augmented inference')
     parser.add_argument('--update', action='store_true', help='update all models')
-    parser.add_argument('--cfg', type=str, default='./cfg/yolor_p6_custom.cfg', help='*.cfg path')
+    parser.add_argument('--cfg', type=str, default='./yolor/cfg/yolor_p6_custom.cfg', help='*.cfg path')
     parser.add_argument('--names', type=str, default='./data/farmbot.names', help='*.cfg path')
     parser.add_argument('--vertical_focal_len', type=float, default= 898.292, help='focal length of camera. default is L515')
     parser.add_argument('--horizontal_focal_len', type=float, default= 897.507, help='focal length of camera. default is L515')
